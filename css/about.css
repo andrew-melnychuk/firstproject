@@ -1,0 +1,74 @@
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+video {
+	position: fixed;
+	top: 164px;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+
+}
+
+h2 {
+	position: fixed;
+	top: 169px;
+	left: 3%;
+	right: 3%;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 590;
+}
+
+span {
+	text-decoration: line-through;
+}
+
+main a {
+	color: #000;
+}
+
+@media only screen and (min-width: 700px) {
+	.wrapper {
+		width: 80%;
+	}
+	
+	video {
+		top: 60px;
+	}
+
+	h2 {
+		top: 100px;
+		left: 10%;
+		right: 10%;
+		font-size: 22px;
+		line-height: 28px;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.wrapper {
+		width: 70%;
+	}
+	
+	video {
+		top: 60px;
+	}
+
+	h2 {
+		top: 120px;
+		left: 15%;
+		right: 15%;
+		font-size: 26px;
+		line-height: 34px;
+	}
+}
