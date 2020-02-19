@@ -55,7 +55,10 @@ h1 {
 }
 
 .contact_form .btn {
-	background: #transparent;
+	display: block;
+	font-size: 20px;
+	text-decoration: inherit;
+	background: transparent;
 	color: rgb(100, 100, 100);
 	padding: 10px;
 	margin: 25px auto;
