@@ -35,10 +35,10 @@
 			<h1>CONTACT ME</h1>
 			<div class="contact">
 				<form class="contact_form" method="post" data-netlify="true">
-					<input type="text" name="name" placeholder="Your name">
-					<input type="text" name="mail" placeholder="Your e-mail">
-					<textarea name="message" placeholder="Message"></textarea>
-					<input class="btn" type="submit" name="submit" value="Send">
+					<input type="text" name="name" placeholder="Your name" required minlength="4" maxlength="30">
+					<input type="text" name="mail" placeholder="Your e-mail" required minlength="4" maxlength="30">
+					<textarea name="message" placeholder="Message" required></textarea>
+					<button class ="btn" type="submit" name="submit">Send</button>
 				</form>
 			</div>
 		</main>
