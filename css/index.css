@@ -17,7 +17,7 @@ html, body {
 }
 
 #mainnav li {
-	margin: 40px 0;
+	margin: 40px 0px;
 	top: -150px;
 	display: none;
 	position: relative;
@@ -111,7 +111,6 @@ h1 span {
 	}
 
 	#mainnav {
-		float: right;
 		margin-left: 50px;
 	}
 	
@@ -144,4 +143,5 @@ h1 span {
 	#mainnav li {
 		margin: 20px 20px;
 		padding-left: 40px;
+	}
 }
