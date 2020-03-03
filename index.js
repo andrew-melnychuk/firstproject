@@ -1,15 +1,40 @@
 'use strict'
 
-// Title
-const title = document.getElementById("title");
+// Wallpaper and title
+const menu = document.querySelector(".hamb");
 
-title.innerHTML = 'WINTER<br><span>is</span><span id="hidden">lii</span><br>COMING';
+let dateMonth = new Date().getMonth() + 1;
+let currentSeason;
 
-// Wallpaper
+if (12 <= dateMonth && 2 <= dateMonth) currentSeason = 'winter';
+else if (3 <= dateMonth && dateMonth <= 5) currentSeason = 'spring';
+else if (6 <= dateMonth && dateMonth <= 8) currentSeason = 'summer';
+else if (9 <= dateMonth && dateMonth <= 11) currentSeason = 'autumn';
+else currentSeason = 'winter';
 
-// Seasons
+const position = 'afterEnd';
+let item;
 
-const winter = 'winter';
-const spring = 'spring';
-const summer = 'summer';
-const autumn = 'autumn';
+if (currentSeason == 'winter') {
+  item = `<div class="wallpaper wallpaper-${currentSeason}">
+            <h1 class="title ${currentSeason}">WINTER<br><span>has</span><span   id="hidden"></span><br>COME</h1>
+          </div>`;
+} else if (currentSeason == 'spring') {
+  item = `<div class="wallpaper wallpaper-${currentSeason}">
+            <h1 class="title ${currentSeason}">SUMMER<br><span>is</span><span   id="hidden">lii</span><br>COMING</h1>
+          </div>`;
+} else if (currentSeason == 'summer') {
+  item = `<div class="wallpaper wallpaper-${currentSeason}">
+            <h1 class="title ${currentSeason}">SUMMER<br><span>has</span><span   id="hidden"></span><br>COME</h1>
+          </div>`;
+} else if (currentSeason == 'autumn') {
+  item = `<div class="wallpaper wallpaper-${currentSeason}">
+            <h1 class="title ${currentSeason}">WINTER<br><span>is</span><span   id="hidden">lii</span><br>COMING</h1>
+          </div>`;
+} else {
+  item = `<div class="wallpaper wallpaper-${currentSeason}">
+            <h1 class="title ${currentSeason}">Where<br><span>do you</span><span   id="hidden">lii</span><br>Live?</h1>
+          </div>`;
+}
+
+menu.insertAdjacentHTML(position, item);

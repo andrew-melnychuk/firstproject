@@ -61,33 +61,66 @@ html, body {
 	right: 0;
 }
 
-.winter {
-	background: url(../images/mountains.jpg) center no-repeat;
+.wallpaper-winter {
+	background: url(../images/winter.jpg) center no-repeat;
 	background-size: cover;
 }
 
-h1 {
+.wallpaper-spring {
+	background: url(../images/summer.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.wallpaper-summer {
+	background: url(../images/summer.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.wallpaper-autumn {
+	background: url(../images/autumn.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.title {
 	font-size: 2.5em;
 	text-align: center;
 	font-family: "Game of Thrones", sans-serif;
-	font-style: normal;
 	font-weight: 500;
 	color: rgb(255, 255, 255);
-	width: 100%;
 	position: absolute;
 	top: 42%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	margin: 40px auto;
-	line-height: 0.6em;
 	text-shadow: .5px .5px 1px #202020;
 	padding-top: 5px;
 }
 
-h1 span {
+.title span {
 	font-size: 0.4em;
 	line-height: 1.5em;
 	vertical-align: top;
+}
+
+.wallpaper .winter {
+	line-height: 0.75em;
+}
+
+.wallpaper .summer {
+	line-height: 0.75em;
+}
+
+.wallpaper .spring {
+	line-height: 0.5em;
+}
+
+.wallpaper .spring span {
+	line-height: 2.4;
+	vertical-align: bottom;
+}
+
+.wallpaper .autumn {
+	line-height: 0.6em;
 }
 
 #hidden {
@@ -114,7 +147,7 @@ h1 span {
 
 
 @media only screen and (min-width: 700px) {
-	h1 {
+	.title {
 		font-size: 3.5em;
 	}
 
@@ -144,7 +177,7 @@ h1 span {
 }
 
 @media only screen and (min-width: 1000px) {
-	h1 {
+	.title {
 		font-size: 4em;
 	}
 
