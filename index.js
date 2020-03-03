@@ -3,14 +3,14 @@
 // Wallpaper and title
 const menu = document.querySelector(".hamb");
 
-let dateMonth = new Date().getMonth() + 1;
+let currentMonth = new Date().getMonth() + 1;
 let currentSeason;
 
-if (12 <= dateMonth && 2 <= dateMonth) currentSeason = 'winter';
-else if (3 <= dateMonth && dateMonth <= 5) currentSeason = 'spring';
-else if (6 <= dateMonth && dateMonth <= 8) currentSeason = 'summer';
-else if (9 <= dateMonth && dateMonth <= 11) currentSeason = 'autumn';
-else currentSeason = 'winter';
+if (12 <= currentMonth && 2 <= currentMonth) currentSeason = 'winter';
+else if (3 <= currentMonth && currentMonth <= 5) currentSeason = 'spring';
+else if (6 <= currentMonth && currentMonth <= 8) currentSeason = 'summer';
+else if (9 <= currentMonth && currentMonth <= 11) currentSeason = 'autumn';
+else currentSeason = 'autumn';
 
 const position = 'afterEnd';
 let item;
