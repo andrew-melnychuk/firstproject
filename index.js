@@ -6,7 +6,7 @@ const menu = document.querySelector(".hamb");
 let currentMonth = new Date().getMonth() + 1;
 let currentSeason;
 
-if (12 <= currentMonth && 2 <= currentMonth) currentSeason = 'winter';
+if (12 <= currentMonth || currentMonth <= 2) currentSeason = 'winter';
 else if (3 <= currentMonth && currentMonth <= 5) currentSeason = 'spring';
 else if (6 <= currentMonth && currentMonth <= 8) currentSeason = 'summer';
 else if (9 <= currentMonth && currentMonth <= 11) currentSeason = 'autumn';
