@@ -17,7 +17,7 @@ let item;
 
 if (currentSeason == 'winter') {
   item = `<div class="wallpaper wallpaper-${currentSeason}">
-            <h1 class="title ${currentSeason}">WINTER<br><span>has</span><span   id="hidden"></span><br>COME</h1>
+            <h1 class="title ${currentSeason}">test<br><span>has</span><span   id="hidden"></span><br>COME</h1>
           </div>`;
 } else if (currentSeason == 'spring') {
   item = `<div class="wallpaper wallpaper-${currentSeason}">
