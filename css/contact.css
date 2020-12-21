@@ -1,74 +1,213 @@
-html, body {
-	background: #fff;
+html,
+body {
+  background: #fff;
 }
 
-.wrapper {
-	width: 70%;
-	margin: 0 auto;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
 }
 
 h1 {
-	font-size: 24px;
-	text-align: center;
-	padding: 30px 0;
+  font-size: 24px;
+  text-align: center;
+  padding: 30px 0;
 }
 
 .contact {
-	position: relative;
-	background: url(../images/notebook.jpg) no-repeat center;
-	background-size: cover;
-	width: 100%;
-	height: 82vh;
-	margin: 0px auto;
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vh 0 10vh;
+  width: 90%;
+  background: url(../images/notebook-rotated.jpg) center no-repeat;
+  background-size: contain;
+  margin-bottom: 20px;
 }
 
 .contact_form {
-	position: absolute;
-	margin: 90px auto;
-	width: 80%;
-	margin-left: -50px;
-	font-family: 'Roboto Condensed', sans-serif;
+  box-sizing: border-box;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
 }
 
-.contact_form input, .contact_form textarea {
-	display: block;
-	width: 600px;
-	margin: 45px auto 0;
-	background: transparent;
-	padding: 25px;
-	outline: none;
-	color: #222;
-	transition: 0.5s;
-	font-size: 20px;
-	border: 1px solid rgb(169, 169, 169);
-}
-
-.contact_form input:focus, .contact_form textarea:focus {
-	box-shadow: 0 0 10px 4px #808080;
+.contact_form input,
+.contact_form textarea {
+  box-sizing: border-box;
+  display: block;
+  margin: 20px auto 0;
+  width: calc(100% - 20px);
+  font-size: 16px;
+  padding: 10px;
+  outline: none;
+  color: #222;
+  transition: 0.5s;
+  background: transparent;
+  border: 1px solid rgb(169, 169, 169);
 }
 
 .contact_form textarea {
-	resize: none;
-	height: 140px;
+  resize: none;
+  height: 80px;
+}
+
+.contact_form input:focus,
+.contact_form textarea:focus {
+  box-shadow: 0 0 10px 4px #808080;
 }
 
 .contact_form .btn {
-	display: block;
-	font-size: 20px;
-	text-decoration: inherit;
-	background: transparent;
-	color: rgb(100, 100, 100);
-	padding: 10px;
-	margin: 25px auto;
-	cursor: pointer;
-	transition: .5s;
-	width: 100px;
-	border: 2px solid rgb(169, 169, 169);
+  display: block;
+  font-size: 16px;
+  padding: 6px 20px;
+  margin: 20px 0;
+  text-decoration: inherit;
+  background: transparent;
+  color: rgb(60, 60, 60);
+  border: 2px solid rgb(169, 169, 169);
+  transition: 0.5s;
 }
 
 .contact_form .btn:hover {
-	color: #fff;
-	background: rgb(100, 100, 100);
+  color: #fff;
+  background: rgb(100, 100, 100);
+}
+
+@media only screen and (orientation: landscape) {
+  .contact {
+    padding: 5vh 0 10vh;
+    background: url(../images/notebook.jpg) center no-repeat;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 450px) {
+  .contact_form {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .contact_form {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  nav {
+    margin: 0 5%;
+  }
+  .contact {
+    padding: 10vh 0 15vh;
+    background: url(../images/notebook-rotated.jpg) center no-repeat;
+    background-size: contain;
+  }
+
+  .contact_form {
+    width: 65%;
+  }
+
+  .contact_form input,
+  .contact_form textarea {
+    margin: 30px auto 0;
+    padding: 15px;
+  }
+
+  .contact_form textarea {
+    height: 120px;
+  }
+
+  .contact_form .btn {
+    padding: 6px 20px;
+    margin: 30px 0;
+  }
+}
+
+@media only screen and (min-width: 700px) and (orientation: landscape) {
+  nav {
+    margin: 0 10%;
+  }
+  .contact {
+    padding: 5vh 0 5vh;
+    background: url(../images/notebook.jpg) center no-repeat;
+    background-size: contain;
+    margin-bottom: 0;
+  }
+
+  .contact_form {
+    width: 55%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  nav {
+    margin: 0 10%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .contact {
+    padding: 18vh 0 19vh;
+    background: url(../images/notebook-rotated.jpg) center no-repeat;
+    background-size: contain;
+  }
+
+  .contact_form {
+    width: 65%;
+  }
+
+  .contact_form textarea {
+    height: 240px;
+  }
+
+  .contact_form .btn {
+    font-size: 24px;
+    padding: 14px 32px;
+  }
+}
+
+/* stopped here */
+@media only screen and (min-width: 1000px) and (orientation: landscape) {
+  .contact {
+    padding: 5vh 0 15vh;
+    background: url(../images/notebook.jpg) top no-repeat;
+    background-size: contain;
+    margin-bottom: 0;
+  }
+
+  .contact_form {
+    width: 55%;
+    padding-top: 30px;
+  }
+
+  .contact_form .btn {
+    padding: 6px 20px;
+  }
+
+  .contact_form textarea {
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .contact {
+    width: 70%;
+    padding: 10vh 0 15vh;
+    background: url(../images/notebook.jpg) center no-repeat;
+    background-size: contain;
+  }
+
+  .contact_form {
+    padding-top: 50px;
+  }
 }
